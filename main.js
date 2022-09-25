@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // CLICK EVENT: change timeframe
   document.querySelector("#navTimeframe").addEventListener('click', event => { 
     event.preventDefault();
-    if (event.target.tagName !== 'A') return;
+    if (event.target.tagName !== 'BUTTON') return;
 
     // remove existing active nav item
     document.querySelectorAll('.nav_item').forEach(nav => nav.classList.remove('active'));
@@ -60,7 +60,7 @@ function createCard(data, timeframe) {
     <div class="card_inner">
       <div class="card_header">
         <h4>${data.title}</h4>
-        <button>
+        <button aria-label="more option">
           <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
             <path fill="#000" fill-rule="evenodd"
               d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" />
@@ -68,7 +68,7 @@ function createCard(data, timeframe) {
         </button>
       </div>
       <div class="card_content">
-        <h1 class="current">${_current}hr${(parseInt(_current) > 1 || parseInt(_current) == 0) ? 's' : ''}</h1>
+        <h2 class="current">${_current}hr${(parseInt(_current) > 1 || parseInt(_current) == 0) ? 's' : ''}</h2>
         <p class="previous">${_noun} - ${_previous}hr${(parseInt(_previous) == 1) ? '' : 's'}</p>
       </div>
     </div>

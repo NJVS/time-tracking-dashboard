@@ -216,7 +216,7 @@ select {
 .card .card_inner .card_content {
   margin-top: 1.125rem;
 }
-.card .card_inner .card_content h1.current {
+.card .card_inner .card_content h2.current {
   color: var(--c-card-text);
   font-size: 3rem;
   font-weight: 300;
@@ -265,6 +265,7 @@ main {
 }
 @media (max-width: 768px) {
   main {
+    padding: 1.875rem 0;
     grid-template-columns: 0.8fr 1.2fr;
     grid-template-areas: "head section" "head section" ". attr";
   }
@@ -272,7 +273,6 @@ main {
 @media (max-width: 426px) {
   main {
     min-height: 100vh;
-    padding: 1.875rem 0;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas: "head" "section" "attr";
@@ -351,12 +351,16 @@ header .header-container .nav {
   gap: 0.875rem;
   padding: 1.875rem;
 }
-header .header-container .nav a.nav_item {
+header .header-container .nav button.nav_item {
+  border: none;
+  background-color: transparent;
   color: var(--c-nav-text);
   text-decoration: none;
+  text-align: start;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
-header .header-container .nav a.nav_item.active, header .header-container .nav a.nav_item:hover {
+header .header-container .nav button.nav_item.active, header .header-container .nav button.nav_item:hover {
   color: var(--c-nav-text-active);
 }
 @media (max-width: 426px) {

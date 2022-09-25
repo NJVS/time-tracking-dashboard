@@ -36,6 +36,7 @@ main {
       ". attr attr";
   }
   @include media-query(mobile, md) {
+    padding: 1.875rem 0;
     grid-template-columns: 0.8fr 1.2fr;
     grid-template-areas: 
       "head section"
@@ -44,7 +45,6 @@ main {
   }
   @include media-query(mobile, sm) {
     min-height: 100vh;
-    padding: 1.875rem 0;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas: "head" "section" "attr";
@@ -127,10 +127,15 @@ header {
       flex-direction: column;
       gap: 0.875rem;
       padding: 1.875rem;
-      a.nav_item {
+      button.nav_item {
+        border: none;
+        background-color: transparent;
         color: var(--c-nav-text);
         text-decoration: none;
+        text-align: start;
+        cursor: pointer;
         transition: all 0.3s ease;
+
         &.active,
         &:hover {
           color: var(--c-nav-text-active);
