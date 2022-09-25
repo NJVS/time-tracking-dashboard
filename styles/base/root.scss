@@ -1,0 +1,11 @@
+@use '../helpers' as *;
+
+:root {
+  --f-s-primary: 'Rubik', sans-serif;
+
+  @each $theme-name, $theme-colors in $colors {
+    @each $color-name, $color-value in $theme-colors {
+      --c-#{$theme-name}-#{$color-name}: #{$color-value};
+    }
+  }
+}

@@ -1,0 +1,37 @@
+
+
+$colors: (
+  body: (
+    background: hsl(226, 43%, 10%),
+  ),
+  profile: (
+    border: hsl(0, 0%, 100%),
+    text: hsl(0, 0%, 100%),
+    text-muted: hsl(236, 100%, 87%),
+    background: hsl(246, 80%, 60%),
+  ),
+  nav: (
+    background: hsl(235, 46%, 20%),
+    text: hsl(235, 45%, 61%),
+    text-active: hsl(0, 0%, 100%),
+  ),
+  card: (
+    text: hsl(0, 0%, 100%),
+    text-muted: hsl(235, 45%, 61%),
+    background: hsl(235, 46%, 20%),
+    // background-hover: hsl(235, 45%, 61%),
+    background-hover: lighten(hsl(235, 46%, 20%), 8%),
+  ),
+  card-theme: (
+    work: hsl(15, 100%, 70%),
+    play: hsl(195, 74%, 62%),
+    study: hsl(348, 100%, 68%),
+    exercise: hsl(145, 58%, 55%),
+    social: hsl(264, 64%, 52%),
+    self-care: hsl(43, 84%, 65%)
+  ),
+  attr: (
+    text: hsl(236, 100%, 87%),
+    link: hsl(0, 0%, 100%)
+  ),
+);
