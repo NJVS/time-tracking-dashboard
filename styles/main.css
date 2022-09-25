@@ -128,7 +128,7 @@ select {
   background-color: #ff8c66;
 }
 .card-work::before {
-  content: url("../../images/icon-work.svg");
+  content: url("../images/icon-work.svg");
   position: absolute;
   top: -4%;
   right: 5%;
@@ -137,7 +137,7 @@ select {
   background-color: #56c2e6;
 }
 .card-play::before {
-  content: url("../../images/icon-play.svg");
+  content: url("../images/icon-play.svg");
   position: absolute;
   top: -4%;
   right: 5%;
@@ -146,7 +146,7 @@ select {
   background-color: #ff5c7c;
 }
 .card-study::before {
-  content: url("../../images/icon-study.svg");
+  content: url("../images/icon-study.svg");
   position: absolute;
   top: -4%;
   right: 5%;
@@ -155,7 +155,7 @@ select {
   background-color: #4acf81;
 }
 .card-exercise::before {
-  content: url("../../images/icon-exercise.svg");
+  content: url("../images/icon-exercise.svg");
   position: absolute;
   top: 0;
   right: 5%;
@@ -164,7 +164,7 @@ select {
   background-color: #7536d3;
 }
 .card-social::before {
-  content: url("../../images/icon-social.svg");
+  content: url("../images/icon-social.svg");
   position: absolute;
   top: -4%;
   right: 5%;
@@ -173,7 +173,7 @@ select {
   background-color: #f1c65b;
 }
 .card-self-care::before {
-  content: url("../../images/icon-self-care.svg");
+  content: url("../images/icon-self-care.svg");
   position: absolute;
   top: -4%;
   right: 5%;

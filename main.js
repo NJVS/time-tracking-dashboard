@@ -51,7 +51,7 @@ function displayTimeframe(timeframe) {
 function createCard(data, timeframe) {
   const card = document.createElement('div');
 
-  const _noun = (timeframe == 'daily') ? 'Day' : (timeframe == 'weekly') ? 'Week' : 'Month';
+  const _noun = (timeframe == 'daily') ? 'Yesterday' : (timeframe == 'weekly') ? 'Last Week' : 'Last Month';
   const _current = data.timeframes[timeframe].current;
   const _previous = data.timeframes[timeframe].previous;
 
@@ -69,7 +69,7 @@ function createCard(data, timeframe) {
       </div>
       <div class="card_content">
         <h1 class="current">${_current}hr${(parseInt(_current) > 1 || parseInt(_current) == 0) ? 's' : ''}</h1>
-        <p class="previous">Last ${_noun} - ${_previous}hr${(parseInt(_previous) == 1) ? '' : 's'}</p>
+        <p class="previous">${_noun} - ${_previous}hr${(parseInt(_previous) == 1) ? '' : 's'}</p>
       </div>
     </div>
   `;

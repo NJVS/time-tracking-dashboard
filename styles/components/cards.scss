@@ -12,7 +12,7 @@
       background-color: $theme-value;
       // icon
       &::before {
-        content: url('../../images/icon-#{$theme-name}.svg');
+        content: url('../images/icon-#{$theme-name}.svg');
         position: absolute;
         top: if(index('exercise', $theme-name), 0, -4%);
         right: 5%;

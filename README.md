@@ -11,10 +11,7 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -35,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- [Live Demo]()
+- [Live Demo](https://njvs.github.io/time-tracking-dashboard/)
 
 ## My process
 
@@ -51,3 +48,12 @@ Users should be able to:
 
 ### What I learned
 
+Instead of changing the text of every timecard, what I have done is just create a new card element and append it inside the container. By doing this, I can simply add a new activity, such as `Sleep`, to the `data.json` file, and it will automatically add a new card inside the html; while I still need to add a new card theme for background color and for the icon, I believe this is easier than modifying the html file everytime Ill add new activity. 
+
+I acctually struggle more with CSS than with Javascript but overall this is a fun project and I enjoy it.
+
+### Useful resources
+
+- [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) - I alway open this guide everytime I use CSS Grid
+- [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - This is for CSS Flexbox
+- [An opinionated styleguide for writing sane, maintainable and scalable Sass.](https://sass-guidelin.es/)
